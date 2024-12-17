@@ -1,1 +1,1 @@
-export { Button, ThemeButton } from "./ui/button";
+export { Button, ButtonTheme } from "./ui/button";
