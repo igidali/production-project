@@ -1,20 +1,17 @@
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-
-import { ThemeDecorator } from "shared/config/storybook/theme-decorator/theme-decorator";
-import { Theme } from "app/providers/theme-provider";
-import { NotFoundPage } from "./not-found-page";
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Theme } from 'app/providers/theme-provider';
+import { ThemeDecorator } from 'shared/config/storybook/theme-decorator/theme-decorator';
+import { NotFoundPage } from './not-found-page';
 
 export default {
-  title: "pages/not-found-page",
+  title: 'pages/not-found-page',
   component: NotFoundPage,
   argTypes: {
-    backgroundColor: { control: "color" },
+    backgroundColor: { control: 'color' },
   },
 } as ComponentMeta<typeof NotFoundPage>;
 
-const Template: ComponentStory<typeof NotFoundPage> = (args) => (
-  <NotFoundPage {...(args as {})} />
-);
+const Template: ComponentStory<typeof NotFoundPage> = (args) => <NotFoundPage {...(args as {})} />;
 export const Normal = Template.bind({});
 Normal.args = {};
 

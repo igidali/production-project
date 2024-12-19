@@ -1,13 +1,13 @@
-import { BugButton } from "app/providers/error-boundary";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
+import { BugButton } from 'app/providers/error-boundary';
 
 const MainPage = () => {
-  const { t } = useTranslation("main");
+  const { t } = useTranslation('main');
 
   return (
     <div>
       <BugButton />
-      {t("Главная страница")}
+      {t('Главная страница')}
     </div>
   );
 };
