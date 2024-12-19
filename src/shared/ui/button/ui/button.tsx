@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes, FC } from 'react';
-import { classNames } from 'shared/lib/classnames/classnames';
+import { classNames } from 'shared/lib/classnames/classNames';
 import cls from './button.module.scss';
 
 export enum ButtonTheme {

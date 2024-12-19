@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
-import { classNames } from 'shared/lib/classnames/classnames';
+import { classNames } from 'shared/lib/classnames/classNames';
 import { Button } from 'shared/ui/button';
 import cls from './page-error.module.scss';
 
