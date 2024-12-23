@@ -14,7 +14,7 @@ export const Navbar = ({ className }: NavbarProps) => {
   const [isAuthModal, setIsAuthModal] = useState(false);
 
   const onToggleModal = useCallback(() => {
-    setIsAuthModal(prev => !prev);
+    setIsAuthModal((prev) => !prev);
   }, []);
 
   return (
@@ -24,7 +24,7 @@ export const Navbar = ({ className }: NavbarProps) => {
       </Button>
 
       <Modal isOpen={isAuthModal} onClose={onToggleModal}>
-        <h1>Modal</h1>
+        <h1>{t('Modal')}</h1>
       </Modal>
     </div>
   );

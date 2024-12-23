@@ -1,4 +1,6 @@
-import { FC, ReactNode, useCallback, useEffect, useRef, useState } from 'react';
+import {
+  FC, ReactNode, useCallback, useEffect, useRef, useState, MouseEvent,
+} from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Portal } from 'shared/ui/portal/portal';
 import cls from './modal.module.scss';
@@ -12,7 +14,9 @@ interface ModalProps {
 
 const ANIMATION_DELAY = 300;
 
-export const Modal: FC<ModalProps> = ({ className, children, isOpen, onClose }) => {
+export const Modal: FC<ModalProps> = ({
+  className, children, isOpen, onClose,
+}) => {
   const [isClosing, setIsClosing] = useState(false);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -26,7 +30,7 @@ export const Modal: FC<ModalProps> = ({ className, children, isOpen, onClose }) 
     }
   }, [onClose]);
 
-  const onContentClick = (e: React.MouseEvent) => {
+  const onContentClick = (e: MouseEvent) => {
     e.stopPropagation();
   };
 

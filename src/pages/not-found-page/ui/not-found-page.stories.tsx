@@ -11,7 +11,7 @@ export default {
   },
 } as ComponentMeta<typeof NotFoundPage>;
 
-const Template: ComponentStory<typeof NotFoundPage> = args => <NotFoundPage {...(args as {})} />;
+const Template: ComponentStory<typeof NotFoundPage> = (args) => <NotFoundPage {...(args as {})} />;
 export const Normal = Template.bind({});
 Normal.args = {};
 
