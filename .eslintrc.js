@@ -46,6 +46,8 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'error',
     'no-param-reassign': 'off',
+    'object-curly-newline': ['error', { multiline: true, consistent: true }],
+    'jsx-a11y/no-autofocus': 'off',
   },
   globals: {
     __IS_DEV__: true,
