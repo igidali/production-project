@@ -19,7 +19,6 @@ export function ComponentRender(component: ReactNode, options: ComponentRenderOp
       <MemoryRouter initialEntries={[route]}>
         <I18nextProvider i18n={i18nForTests}>{component}</I18nextProvider>
       </MemoryRouter>
-      ,
     </StoreProvider>,
   );
 }

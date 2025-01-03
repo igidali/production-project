@@ -23,7 +23,12 @@ export default {
   moduleNameMapper: {
     '\\.s?css$': 'identity-obj-proxy',
     '\\.svg': path.resolve(__dirname, 'jest-empty-component.tsx'),
+    '^axios$': require.resolve('axios'),
   },
+  transform: {
+    '^.+\\.[tj]sx?$': 'babel-jest',
+  },
+
   // Indicates whether the coverage information should be collected while executing the test
   // collectCoverage: false,
 

@@ -99,3 +99,10 @@ OutlineSizeXL.args = {
   theme: ButtonTheme.OUTLINE,
   size: ButtonSize.XL,
 };
+
+export const Diasbled = Template.bind({});
+Diasbled.args = {
+  children: 'Text',
+  theme: ButtonTheme.OUTLINE,
+  disabled: true,
+};
