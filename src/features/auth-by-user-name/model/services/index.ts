@@ -1,1 +1,1 @@
-export { loginByUserName } from './login-by-user-name/login-by-user-name';
+export { loginByUserName } from './login-by-username/login-by-username';
