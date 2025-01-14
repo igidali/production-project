@@ -3,7 +3,7 @@ import { Country, Currency } from 'shared/constants/common';
 export interface Profile {
   first: string;
   lastname: string;
-  age: number;
+  age: 22;
   currency: Currency;
   country: Country;
   city: string;

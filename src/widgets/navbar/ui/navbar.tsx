@@ -1,11 +1,10 @@
 import { memo, useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
+import { LoginModal } from 'features/auth-by-user-name';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Button, ButtonTheme } from 'shared/ui/button';
-import { getUserAuthData } from '../../../entities/user/model/selectors/get-user-auth-data/get-user-auth-data';
-import { userActions } from '../../../entities/user/model/slice/user-slice';
-import { LoginModal } from '../../../features/auth-by-user-name/ui/login-modal/login-modal';
+import { getUserAuthData, userActions } from '../../../entities/user';
 import cls from './navbar.module.scss';
 
 interface NavbarProps {

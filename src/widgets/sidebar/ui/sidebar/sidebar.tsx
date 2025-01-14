@@ -1,7 +1,6 @@
 import { memo, useMemo, useState } from 'react';
-import { classNames } from 'shared/lib/classNames/classNames';
-import { Button, ButtonTheme } from 'shared/ui/button';
-import { ButtonSize } from 'shared/ui/button/ui/button';
+import { classNames } from 'shared/lib/classNames';
+import { Button, ButtonSize, ButtonTheme } from 'shared/ui/button';
 import { LangSwitcher } from 'shared/ui/lang-switcher';
 import { ThemeSwitcher } from 'shared/ui/theme-switcher';
 import { SidebarItemsList } from '../../model/items';
@@ -36,12 +35,10 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
       >
         {collapsed ? '>' : '<'}
       </Button>
-
       <div className={cls.items}>{itemsList}</div>
-
       <div className={cls.switchers}>
         <ThemeSwitcher />
-        <LangSwitcher className={cls.lang} short={collapsed} />
+        <LangSwitcher short={collapsed} className={cls.lang} />
       </div>
     </div>
   );
