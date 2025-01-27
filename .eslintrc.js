@@ -48,6 +48,7 @@ module.exports = {
     'no-param-reassign': 'off',
     'object-curly-newline': ['error', { multiline: true, consistent: true }],
     'jsx-a11y/no-autofocus': 'off',
+    'no-undef': 'off',
   },
   globals: {
     __IS_DEV__: true,
