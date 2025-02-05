@@ -34,6 +34,12 @@
   border: none;
 }
 
+.outlineRed {
+  border: 1px solid var(--red-light);
+  color: var(--red-light);
+  background: none;
+}
+
 .square {
   padding: 0;
 }

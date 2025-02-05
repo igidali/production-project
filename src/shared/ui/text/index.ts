@@ -1,2 +1,1 @@
-export { TextTheme } from './ui/text';
-export { Text } from './ui/text';
+export { Text, TextTheme, TextAlign } from './ui/text';
