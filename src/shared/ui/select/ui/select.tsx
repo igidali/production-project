@@ -24,11 +24,12 @@ export const Select = memo(({ className, label, options, value, onChange, readon
   };
 
   const optionList = useMemo(
-    () => options?.map((opt) => (
-      <option className={cls.option} value={opt.value} key={opt.value}>
-        {opt.content}
-      </option>
-    )),
+    () =>
+      options?.map((opt) => (
+        <option className={cls.option} value={opt.value} key={opt.value}>
+          {opt.content}
+        </option>
+      )),
     [options],
   );
 

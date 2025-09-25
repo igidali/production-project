@@ -16,6 +16,9 @@ module.exports = {
   plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks'],
   rules: {
     quotes: ['error', 'single'],
+    'jsx-quotes': ['error', 'prefer-double'],
+    'implicit-arrow-linebreak': 'off',
+    'operator-linebreak': ['error', 'before'],
     'react/jsx-indent': [2, 2],
     'react/jsx-indent-props': [2, 2],
     indent: [2, 2],
@@ -53,6 +56,7 @@ module.exports = {
   globals: {
     __IS_DEV__: true,
     __API__: true,
+    __PROJECT__: true,
   },
   overrides: [
     {
