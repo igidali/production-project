@@ -21,7 +21,18 @@ module.exports = {
     'operator-linebreak': ['error', 'before'],
     'react/jsx-indent': [2, 2],
     'react/jsx-indent-props': [2, 2],
-    indent: [2, 2],
+    indent: [
+      'error',
+      2,
+      {
+        SwitchCase: 1,
+        ignoredNodes: [
+          'FunctionExpression > .params[decorators.length > 0]',
+          'FunctionExpression > .params > :matches(Decorator, :not(:first-child))',
+          'ClassBody.body > PropertyDefinition[decorators.length > 0] > .key',
+        ],
+      },
+    ],
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.tsx'] }],
     'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',
