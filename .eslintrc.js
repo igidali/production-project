@@ -18,7 +18,7 @@ module.exports = {
     quotes: ['error', 'single'],
     'jsx-quotes': ['error', 'prefer-double'],
     'implicit-arrow-linebreak': 'off',
-    'operator-linebreak': ['error', 'before'],
+    'operator-linebreak': 'off',
     'react/jsx-indent': [2, 2],
     'react/jsx-indent-props': [2, 2],
     indent: [

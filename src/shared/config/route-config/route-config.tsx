@@ -24,37 +24,37 @@ export const RoutePath: Record<AppRoutes, string> = {
   [AppRoutes.ABOUT]: '/about',
   [AppRoutes.PROFILE]: '/profile',
   [AppRoutes.ARTICLES]: '/articles',
-  [AppRoutes.ARTICLE_DETAILS]: '/articles', // + :id
+  [AppRoutes.ARTICLE_DETAILS]: '/articles/', // + :id
 
   [AppRoutes.NOT_FOUND]: '*',
 };
 
 export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
   [AppRoutes.MAIN]: {
-    path: RoutePath.main,
+    path: RoutePath[AppRoutes.MAIN],
     element: <MainPage />,
   },
   [AppRoutes.ABOUT]: {
-    path: RoutePath.about,
+    path: RoutePath[AppRoutes.ABOUT],
     element: <AboutPage />,
   },
   [AppRoutes.PROFILE]: {
-    path: RoutePath.profile,
+    path: RoutePath[AppRoutes.PROFILE],
     element: <ProfilePage />,
     authOnly: true,
   },
-  [AppRoutes.ARTICLES]: {
-    path: RoutePath.articles,
-    element: <ArticlesPage />,
-    authOnly: true,
-  },
   [AppRoutes.ARTICLE_DETAILS]: {
-    path: `${RoutePath.article_details}:id`,
+    path: `${RoutePath[AppRoutes.ARTICLE_DETAILS]}:id`,
     element: <ArticleDetailsPage />,
     authOnly: true,
   },
+  [AppRoutes.ARTICLES]: {
+    path: RoutePath[AppRoutes.ARTICLES],
+    element: <ArticlesPage />,
+    authOnly: true,
+  },
   [AppRoutes.NOT_FOUND]: {
-    path: RoutePath.not_found,
+    path: RoutePath[AppRoutes.NOT_FOUND],
     element: <NotFoundPage />,
   },
 };
